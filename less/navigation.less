@@ -6,6 +6,10 @@ nav {
   align-items: center;
   border-bottom: 2px dashed silver;
 
+  @media @tablet {
+    flex-direction: column;
+  }
+
   @media @phone {
     flex-direction: column;
   }
@@ -16,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    @media @phone {
+    @media @tablet {
       width: 100%;
       justify-content: space-around;
     }
